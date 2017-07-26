@@ -66,6 +66,7 @@
 			}
 		}
 		.scaleOut{
+      opacity: 0;
 			animation:scaleOut 1s;
 		}
 		@keyframes scaleOut{

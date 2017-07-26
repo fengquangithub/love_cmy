@@ -1,3 +1,4 @@
+
 // app.js
 var hearts = [];
 var windowWidth = '';
@@ -27,6 +28,7 @@ function update() {
 
 Page({
   change: function (e) {
+    console.log('tap')
     hearts = [];
     var that = this;
     scaleHearts.unshift({
