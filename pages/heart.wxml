@@ -1,0 +1,12 @@
+<view  bindtap="change">
+  <div class="heart skip"></div>
+
+  <div class="heart skip heart2"></div>
+  <block wx:for="{{heartNum}}" wx:for-item="heart">
+    <div class="heart heart3" style="left:{{heart.x}}px;top:{{heart.y}}px;width:{{heart.w}}px;height:{{heart.w}}px"></div>
+  </block>
+  <block wx:for="{{heartScale}}" wx:for-item="heart">
+    <div class="heart heart3 scaleOut" style="left:{{heart.x}}px;top:{{heart.y}}px;width:{{heart.w}}px;height:{{heart.w}}px"></div>
+  </block>
+  
+</view>

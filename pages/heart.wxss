@@ -1,0 +1,80 @@
+    page{
+      height: 100%;
+      background: pink;
+      overflow: hidden;
+    }
+    view{
+      height: 100%;
+    }
+		.heart{
+			width: 100px;
+			height: 100px;
+			background: #ca2626;
+			position: absolute;
+			left: 50%;
+			top:50%;
+			margin: -50px 0 0 -50px;
+			transform:rotate(-45deg);
+
+		}
+		.heart:after,.heart:before{
+			content: "";
+			position: absolute;
+			background: #ca2626;
+			width: 100%;
+			height: 100%;
+			border-radius: 100%;
+
+		}
+		.heart:after{
+			top:-50%;
+			left: 0;
+		}
+		.heart:before{
+			top:0;
+			right: -50%;
+		}
+		.heart2{
+			width: 70px;
+			height: 70px;
+			top: 45%;
+			left: 55%;
+		}
+		.heart3{
+			width: 20px;
+			height: 20px;
+			background: #db585c;
+			transition: all .5s ease-in-out;
+      top: 100px;
+      left: 100px;
+		}
+		.heart3:before,.heart3:after{
+			background: #db585c;
+		}
+		.skip{
+			animation:skip 1s infinite;
+		}
+		@keyframes skip{
+			0%{
+				transform:rotate(-45deg) scale(0.5);
+			}
+			50%{
+				transform:rotate(-45deg) scale(1);
+			}
+			100%{
+				transform:rotate(-45deg) scale(0.5);
+			}
+		}
+		.scaleOut{
+			animation:scaleOut 1s;
+		}
+		@keyframes scaleOut{
+			0%{
+				transform:rotate(-45deg) scale(0.2);
+				opacity: 1;
+			}
+			100%{
+				transform:rotate(-45deg) scale(1.2);
+				opacity: 0;
+			}
+		}
